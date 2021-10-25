@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-Black.ttf);
+    font-weight: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+.tree {
+    width: 960px; 
+    height: 720px; 
+    margin: auto; 
+    position: relative;
+}
+
+.expl {
+    font-family: Merriweather, serif;
+    text-align: center;
+    border: 1em double black;
+    padding: 20px;
+}
