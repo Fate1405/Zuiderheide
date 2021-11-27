@@ -8,4 +8,4 @@ localStorage.setItem("count", n.toString());
 
 const disp = document.getElementById("visitorcount");
 
-disp.innerHTML = `Number of visits: ${localStorage.getItem("count")}`;
+disp.innerHTML = `Number of reloads: ${localStorage.getItem("count")}`;

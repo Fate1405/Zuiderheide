@@ -4,12 +4,28 @@
     font-weight: normal;
 }
 
-body {
-    margin: 0;
+* {
+    border: 2px solid blue;
 }
 
 .header {
-    background-color: gray;
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    margin: 0;
+    gap: 1rem;
+}
+
+.main {
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    margin: 0;
+    gap: 1rem;
+}
+
+.navigation {
     display: flex;
     align-items: baseline;
     padding: .5rem;
@@ -43,6 +59,8 @@ body {
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
     pointer-events: none;
+    font-family: Merriweather;
+    font-weight: 100;
 }
 
 .dropdown > .link:focus + .dropdown-menu {
@@ -51,14 +69,25 @@ body {
     pointer-events: auto;
 }
 
-.dropdown > .link:focus, .link:hover {
+.dropdown > .link:focus, .link:hover, .dropdown-link:hover {
     color: aqua;
 }
 
 .logo {
     width: 100px;
+    align-self: flex-end;
 }
 
 .title {
     font-size: 3rem;
+}
+
+.dropdown-link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    font-size: 1em;
+    color: black;
+    font-family: Merriweather;
 }
