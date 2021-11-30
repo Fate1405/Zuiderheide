@@ -1,49 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./resources/css/home.css">
 
-    <title>Zuiderheide</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./resources/css/home.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    
-    <!-- Favicon Stuff -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./resources/media/Favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/media/Favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./resources/media/Favicons/favicon-16x16.png">
-    <link rel="manifest" href="./resources/media/Favicons/site.webmanifest">
-    <link rel="mask-icon" href="./resources/media/Favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+        <!-- Favicon Stuff -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./resources/media/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resources/media/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resources/media/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="./resources/media/Favicons/site.webmanifest">
+        <link rel="mask-icon" href="./resources/media/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
-  </head>
-  
-  <body>
-    <div class="header">
-      <div class="main">
-        <img src="./resources/media/Zuiderheide Favicon.png" class="logo" alt="Logo">
-        <h1 class="title">The Zuiderheide</h1>
-      </div>
-      <div class="navigation">
-        <a class="link" href="#">Flora</a>
-        <a class="link" href="#">Fauna</a>
-        <a class="link" href="#">Map</a>
-        <div class="dropdown">
-          <button class="link">Other</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-link" href="#">Contact</a>
-            <a class="dropdown-link" href="#">About</a>
-            <a class="dropdown-link" href="./webpages/gallery">Gallery</a>
+    </head>
+    <body>
+        <section class="header section">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <div class="navbar-item image">
+                        <!-- <img src="../resources/media/playstore.png" alt="Logo" id="logo"> -->
+                        <a href="./home.html"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
+                            <img alt="Logo" src="./resources/media/Zuiderheide Favicon.png">
+                          </figure></a>
+                    </div>
+                    <div class="navbar-item">
+                        <h1 class="title my-title is-1 is-size-4-mobile" id="myitle">The Zuiderheide</h1>
+                    </div>
+                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="./webpages/Flora/flora_index.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="flora">Flora</button>
+                        </a>
+                        <a href="./webpages/Fauna/fauna_index.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="fauna">Fauna</button>
+                        </a>
+                        <a href="./webpages/map.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="map">Map</button>
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                <button class="button is-light my-button is-medium" id="other">Other</button>
+                            </a>
+                            <div class="navbar-dropdown">
+                                <a href="./webpages/contact.html" class="navbar-item my-button">Contact</a>
+                                <a href="./webpages/about.html" class="navbar-item my-button">About</a>
+                                <a href="./webpages/gallery.html" class="navbar-item my-button">Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        
+        <section class="my-content section">
+
+          <div class="columns welcome">
+            <div class="column is-half">
+              <img src="https://via.placeholder.com/600" alt="">
+            </div>
+            <div class="column">
+              <div class="content box">
+                <div class="block">
+                  <h1 class="heading title is-2">
+                    Welcome to the Zuiderheide
+                  </h1>
+                </div>
+                <div class="block">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                </div>
+                <div class="block">
+                  <a href="#" class="button is-medium is-fullwidth">About Us</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <h1>Zuiderheide is currently a WIP, check back later</h1>
+          <div class="columns flora">
+            <div class="column">
+              <div class="content box">
+                <div class="block">
+                  <h1 class="heading title is-2">
+                    Discover Our Flora
+                  </h1>
+                </div>
+                <div class="block">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                </div>
+                <div class="block">
+                  <a href="#" class="button is-medium is-fullwidth">Find out More</a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <img src="https://via.placeholder.com/600" alt="">
+            </div>
+          </div>
+          <div class="columns fauna">
+            <div class="column is-half">
+              <img src="https://via.placeholder.com/600" alt="">
+            </div>
+            <div class="column">
+              <div class="content box">
+                <div class="block">
+                  <h1 class="heading title is-2">
+                    Discover Our Fauna
+                  </h1>
+                </div>
+                <div class="block">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                </div>
+                <div class="block">
+                  <a href="#" class="button is-medium is-fullwidth">Find out More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns map">
+            <div class="column">
+              <div class="content box">
+                <div class="block">
+                  <h1 class="heading title is-2">
+                    Explore the Map
+                  </h1>
+                </div>
+                <div class="block">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                </div>
+                <div class="block">
+                  <a href="" class="button is-medium is-fullwidth">Find out More</a>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <img src="https://via.placeholder.com/600" alt="">
+            </div>
+          </div>
+          <div class="columns other">
+            <div class="column is-half">
+              <img src="https://via.placeholder.com/600" alt="">
+            </div>
+            <div class="column">
+              <div class="content box">
+                <div class="block">
+                  <h1 class="heading title is-2">
+                    Find Something Else
+                  </h1>
+                </div>
+                <div class="block">
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  </p>
+                </div>
+                <div class="block">
+                  <a href="./webpages/contact.html" id="block1" class="button is-large is-fullwidth">
+                    Contact
+                  </a>
+                </div>
+                <div class="block">
+                  <a href="./webpages/gallery.html" class="button is-large is-fullwidth">
+                    Gallery
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div id="visitorcount"></div>
+        </section>
 
-    <script type="text/javascript" src="./resources/scripts/home.js"></script>
-  </body>
+    </body>
 </html>
