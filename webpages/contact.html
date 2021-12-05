@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../resources/css/contact.css">
+
+        <!-- Favicon Stuff -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../resources/media/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../resources/media/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../resources/media/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="../resources/media/Favicons/site.webmanifest">
+        <link rel="mask-icon" href="../resources/media/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <div class="navbar-item image">
+                        <a href="../home.html"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
+                            <img alt="Logo" src="../resources/media/Zuiderheide Favicon.png">
+                          </figure></a>
+                    </div>
+                    <div class="navbar-item">
+                        <h1 class="title my-title is-1 is-size-4-mobile" id="myitle">The Zuiderheide</h1>
+                    </div>
+                </div>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="./Flora/flora_index.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="flora">Flora</button>
+                        </a>
+                        <a href="./Fauna/fauna_index.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="fauna">Fauna</button>
+                        </a>
+                        <a href="./map.html" class="navbar-item">
+                            <button class="button my-button is-light is-medium" id="map">Map</button>
+                        </a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                <button class="button is-light my-button is-medium" id="other">Other</button>
+                            </a>
+                            <div class="navbar-dropdown">
+                                <a href="./contact.html" class="navbar-item my-button">Contact</a>
+                                <a href="./about.html" class="navbar-item my-button">About</a>
+                                <a href="./gallery.html" class="navbar-item my-button">Gallery</a>
+                                <a href="./stats.html" class="navbar-item my-button">Statistics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <section class="my-content">
+            <div class="heading block">
+                <h1 class="title is-2 content" id="main-title">Contact Us</h1>
+                <h2 class="subtitle" id="sub-title">For any enquiries pertaining to the website or the Zuiderheide, please fill in the form below.</h2>
+            </div>
+            <div class="columns">
+                <div class="column is-2"></div>
+                <div class="column is-8">
+                    <div class="box">
+                        <form action="mailto:contact@zuiderheide.com" class="contact-form" method="get" enctype="text/plain">
+                            <div class="field">
+                                <label for="name" class="label">Name</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" class="input is-primary" id="name" name="name" placeholder="John Doe">
+                                    <span class="icon is-left">
+                                        <i class="fas fa-male"></i>
+                                    </span>
+                                </div>
+                                <p class="help">A username or IGN is also okay.</p>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Email Address</label>
+                                <div class="control has-icons-left">
+                                    <input type="email" id="email" name="email" class="input" placeholder="someone@example.com">
+                                    <span class="icon is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="select">
+                                    <select name="topic" id="topic">
+                                        <option value="none">Choose a Topic</option>
+                                        <option value="suggestion">Suggestion</option>
+                                        <option value="enquiry">Enquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="message" class="label">Message</label>
+                                <textarea name="message" id="message" cols="10" rows="8" class="textarea" placeholder="I absolutely adored your website."></textarea>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit" value="send" class="button is-primary is-medium is-outlined">Submit</button>
+                                </div>
+                                <p class="help">If the form doesn't work, try sending your feedback to <a href="mailto:contact@zuiderheide.com">contact@zuiderheide.com</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="column is-2"></div>
+            </div>
+        </section>
+
+    </body>
+</html>
