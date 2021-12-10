@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../resources/css/contact.css">
+        <link rel="stylesheet" type="text/css" href="../resources/css/defaults.css">
 
         <!-- Favicon Stuff -->
         <link rel="apple-touch-icon" sizes="180x180" href="../resources/media/Favicons/apple-touch-icon.png">
@@ -16,7 +17,7 @@
         <link rel="mask-icon" href="../resources/media/Favicons/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-
+        <script src="../resources/scripts/contact.js"></script>
     </head>
     <body>
         <section class="header">
@@ -76,21 +77,22 @@
                             <div class="field">
                                 <label for="name" class="label">Name</label>
                                 <div class="control has-icons-left">
-                                    <input type="text" class="input is-primary" id="name" name="name" placeholder="John Doe">
+                                    <input type="text" class="input" id="name" name="name" onkeydown="verifyName()" placeholder="John Doe">
                                     <span class="icon is-left">
                                         <i class="fas fa-male"></i>
                                     </span>
                                 </div>
-                                <p class="help">A username or IGN is also okay.</p>
+                                <p class="help">A Username or IGN is also okay.</p>
                             </div>
                             <div class="field">
-                                <label for="" class="label">Email Address</label>
+                                <label for="email" class="label">Email Address</label>
                                 <div class="control has-icons-left">
-                                    <input type="email" id="email" name="email" class="input" placeholder="someone@example.com">
+                                    <input type="email" id="email" name="email" class="input" onkeydown="match()" onclick="match()" placeholder="someone@example.com">
                                     <span class="icon is-left">
                                         <i class="fas fa-envelope"></i>
                                     </span>
                                 </div>
+                                <p id="email-help" class="help"></p>
                             </div>
                             <div class="field">
                                 <div class="select">
@@ -108,7 +110,7 @@
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <button type="submit" value="send" class="button is-primary is-medium is-outlined">Submit</button>
+                                    <button type="submit" id="submit" value="send" class="button is-primary is-medium is-outlined">Submit</button>
                                 </div>
                                 <p class="help">If the form doesn't work, try sending your feedback to <a href="mailto:contact@zuiderheide.com">contact@zuiderheide.com</a></p>
                             </div>

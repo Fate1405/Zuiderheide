@@ -1,0 +1,16 @@
+#title, #subtitle {
+    text-align: center;
+    font-family: Merriweather-sans;
+}
+
+#notif {
+    background-color: #C1E1C1;
+}
+
+.main-text .subtitle {
+    font-family: Merriweather-sans;
+}
+
+.main-text p {
+    font-family: Merriweather-Light;
+}

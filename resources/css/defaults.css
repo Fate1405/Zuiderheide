@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-Black.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Merriweather-Sans;
+    src: url(../fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Merriweather-Light;
+    src: url(../fonts/Merriweather_Light/Merriweather-Light.ttf)
+}
+
+/* Navbar Styling */
+.image img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#flora:hover {
+    background-color: #F0B6D5;
+}
+
+#fauna:hover {
+    background-color: #FDFD96;
+}
+
+#map:hover {
+    background-color: #C1E1C1;
+}
+
+#other:hover {
+    background-color: #C6E4FB;
+}
+
+.my-title {
+    font-family: Merriweather-Sans;
+}
+
+.my-button {
+    font-family: Merriweather-Sans;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .image img {
+        width: auto;
+        height: auto;
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+}
+
+/* Navbar Styling */
