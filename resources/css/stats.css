@@ -1,0 +1,18 @@
+#visitor-heading {
+    font-family: Merriweather-Sans;
+    text-align: center;
+}
+
+#star-rating {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
+.tester-red {
+    color: red;
+}
+
+.tester-blue {
+    color: blue;
+}

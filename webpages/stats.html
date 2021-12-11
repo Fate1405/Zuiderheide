@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../resources/css/stats.css">
         <link rel="stylesheet" type="text/css" href="../resources/css/defaults.css">
-        <script src=""></script>
+        <script src="../resources/scripts/jquery.js"></script>
+        <script src="../resources/scripts/stats.js"></script>
 
         <!-- Favicon Stuff -->
         <link rel="apple-touch-icon" sizes="180x180" href="../resources/media/Favicons/apple-touch-icon.png">
@@ -21,7 +22,7 @@
 
     </head>
     <body>
-        <section class="header">
+        <section class="header block">
             <nav class="navbar">
                 <div class="navbar-brand">
                     <div class="navbar-item image">
@@ -64,6 +65,38 @@
                 </div>
             </nav>
         </section>
-
+        <section class="main-content block">
+            <div class="columns">
+                <div class="column is-1"></div>
+                <div class="box column is-4">
+                    <h2 class="subtitle is-3" id="visitor-heading">Total Visitors</h2>
+                </div>
+                <div class="column is-2"></div>
+                <div class="box column is-4">
+                    <h2 class="subtitle is-3" id="visitor-heading">Rate Us</h2>
+                    <fieldset>
+                        <p class="content" id="star-rating">
+                            <span class="icon">
+                                <i class="far fa-star" onclick="updateStarVisuals(1)" id="star1"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="far fa-star" onclick="updateStarVisuals(2)" id="star2"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="far fa-star" onclick="updateStarVisuals(3)" id="star3"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="far fa-star" onclick="updateStarVisuals(4)" id="star4"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="far fa-star" onclick="updateStarVisuals(5)" id="star5"></i>
+                            </span>
+                        </p>
+                        <button class="button is-fullwidth" onclick="sendData()">Submit</button>
+                    </fieldset>
+                </div>
+                <div class="column is-1"></div>
+            </div>
+        </section>
     </body>
 </html>
