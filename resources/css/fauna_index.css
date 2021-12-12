@@ -1,0 +1,17 @@
+#fauna-title {
+    font-family: Merriweather-Sans;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.index .name-subtitles {
+    font-family: Merriweather-Light;
+    text-align: center;
+}
+
+.index .name-subtitles:hover {
+    font-family: Merriweather-Light;
+    text-align: center;
+    color: #c87aa8;
+    transition: color 0.5s ease;
+}
