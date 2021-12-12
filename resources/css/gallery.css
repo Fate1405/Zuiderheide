@@ -1,0 +1,12 @@
+#main-title, #subtitle {
+    font-family: Merriweather-Sans;
+    text-align: center;
+}
+
+.my-container, #note {
+    text-align: center;
+}
+
+#note  {
+    font-family: Merriweather;
+}

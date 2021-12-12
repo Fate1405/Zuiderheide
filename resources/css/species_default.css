@@ -1,0 +1,22 @@
+#common-name {
+    font-family: Merriweather-Sans;
+    text-align: center;
+}
+
+#scientific-name, .image-desc {
+    font-family: Merriweather-Light;
+    text-align: center;
+    font-style: italic;
+}
+
+.main-content {
+    font-family: Merriweather-Light;
+}
+
+#main-image {
+    border-radius: 5%;
+}
+
+.images {
+    border-radius: 30%;
+}
