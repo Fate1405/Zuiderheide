@@ -70,6 +70,31 @@
                 <div class="column is-1"></div>
                 <div class="box column is-4">
                     <h2 class="subtitle is-3" id="visitor-heading">Total Visitors</h2>
+                    <p class="content block" id="counter">
+                        <?php
+
+                            $servername = "localhost";
+                            $username = "fate1405";
+                            $password = ")qvIfQ(z1u?l";
+                            $dbname = "worms";
+
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+
+
+                            if ($conn->connect_error) {
+                                die("Connection failed: Contact Fate1405 for Help");
+                            }
+                            
+                            $sql = "SELECT Visitors FROM maindatadb";
+
+                            $result = $conn->query($sql);
+
+                            $row = $result->fetch_assoc();
+
+                            echo reset($arr);
+                        
+                        ?>
+                    </p>
                 </div>
                 <div class="column is-2"></div>
                 <div class="box column is-4">
@@ -92,7 +117,8 @@
                                 <i class="far fa-star" onclick="updateStarVisuals(5)" id="star5"></i>
                             </span>
                         </p>
-                        <button class="button is-fullwidth" onclick="sendData()">Submit</button>
+                        <button class="button block is-fullwidth" onclick="sendData()" id="submit-btn">Submit</button>
+                        <p class="content block" id="thanks"></p>
                     </fieldset>
                 </div>
                 <div class="column is-1"></div>

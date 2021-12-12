@@ -41,13 +41,23 @@ function updateStarVisuals(starnum) {
 function sendData() {
 
     const myData = getLastStar();
+    const submitButton = document.getElementById("submit-btn");
+    const thanks = document.getElementById("thanks");
 
     if (!(myData)) {
         return;
     }
 
-    $.ajax({
-        url: "./stats.php",
-        
-    });
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this.responseText);
+        }
+      };
+    xmlhttp.open("GET", "https://www.zuiderheide.com/resources/scripts/stats.php?q=" + myData.toString());
+    xmlhttp.send();
+
+    submitButton.disabled = true;
+    thanks.innerHTML = "Thank you for rating us!";
+    
 }

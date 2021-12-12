@@ -16,3 +16,13 @@
 .tester-blue {
     color: blue;
 }
+
+#thanks {
+    font-family: Merriweather-Light;
+}
+
+#counter {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 4rem;
+}
