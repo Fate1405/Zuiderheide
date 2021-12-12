@@ -20,11 +20,30 @@
 
     </head>
     <body>
+      <div class="visitorCounter">
+        <?php
+          $servername = "localhost";
+          $username = "fate1405";
+          $password = ")qvIfQ(z1u?l";
+          $dbname = "worms";
+
+          $conn = new mysqli($servername, $username, $password, $dbname);
+
+
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
+
+          $sql = "UPDATE maindatadb SET Visitors = Visitors + 1;";
+
+          $conn->query($sql);
+        ?>
+      </div>
         <section class="header section">
             <nav class="navbar">
                 <div class="navbar-brand">
                     <div class="navbar-item image">
-                        <a href="./home.html"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
+                        <a href="./home.php"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
                             <img alt="Logo" src="./resources/media/Zuiderheide Favicon.png">
                           </figure></a>
                     </div>
@@ -56,7 +75,7 @@
                                 <a href="./webpages/contact.html" class="navbar-item my-button">Contact</a>
                                 <a href="./webpages/about.html" class="navbar-item my-button">About</a>
                                 <a href="./webpages/gallery.html" class="navbar-item my-button">Gallery</a>
-                                <a href="./webpages/stats.html" class="navbar-item my-button">Statistics</a>
+                                <a href="./webpages/stats.php" class="navbar-item my-button">Statistics</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +212,7 @@
                   </a>
                 </div>
                 <div class="block">
-                  <a href="./webpages/stats.html" class="button is-large is-fullwidth">
+                  <a href="./webpages/stats.php" class="button is-large is-fullwidth">
                     Rate Us
                   </a>
                 </div>

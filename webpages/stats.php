@@ -26,7 +26,7 @@
             <nav class="navbar">
                 <div class="navbar-brand">
                     <div class="navbar-item image">
-                        <a href="../home.html"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
+                        <a href="../home.php"><figure class="is-flex is-align-items-center is-justify-content-center image is-128x128">
                             <img alt="Logo" src="../resources/media/Zuiderheide Favicon.png">
                           </figure></a>
                     </div>
@@ -58,7 +58,7 @@
                                 <a href="./contact.html" class="navbar-item my-button">Contact</a>
                                 <a href="./about.html" class="navbar-item my-button">About</a>
                                 <a href="./gallery.html" class="navbar-item my-button">Gallery</a>
-                                <a href="./stats.html" class="navbar-item my-button">Statistics</a>
+                                <a href="./stats.php" class="navbar-item my-button">Statistics</a>
                             </div>
                         </div>
                     </div>

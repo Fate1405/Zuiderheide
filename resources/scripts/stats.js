@@ -54,7 +54,7 @@ function sendData() {
           console.log(this.responseText);
         }
       };
-    xmlhttp.open("GET", "https://www.zuiderheide.com/resources/scripts/stats.php?q=" + myData.toString());
+    xmlhttp.open("GET", "https://www.zuiderheide.com/resources/scripts/changeStats.php?q=" + myData.toString());
     xmlhttp.send();
 
     submitButton.disabled = true;
